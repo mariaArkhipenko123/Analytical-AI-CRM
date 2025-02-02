@@ -1,0 +1,34 @@
+image: mcr.microsoft.com/dotnet/sdk:8.0
+
+definitions:
+  steps:
+    - step: &LaunchTests-Step
+        test:
+        name: "Testing"
+        script:
+          - echo "Testing..."
+          - dotnet restore
+          - dotnet build --configuration Release
+          - dotnet test --no-build --logger "console;verbosity=detailed"
+    - step: &DeployOnProduction-Step
+        name: Trigger Deployment Pipeline
+        script:
+           - pipe: atlassian/trigger-pipeline:5.8.1
+             variables:
+                BITBUCKET_ACCESS_TOKEN: $DEPLOYMENT_REPO_ACCESS_TOKEN
+                REPOSITORY: 'crm-deployment'
+                REF_TYPE: 'branch'
+                REF_NAME: 'master'
+                CUSTOM_PIPELINE_NAME: 'DeployAll'
+                WAIT: 'true'
+  caches:
+    dotnetcore: ~/.nuget/packages
+
+pipelines:
+  custom:
+    DeployOnProduction:
+        - step: *DeployOnProduction-Step
+  branches:
+    master:
+        - step: *LaunchTests-Step
+        - step: *DeployOnProduction-Step
