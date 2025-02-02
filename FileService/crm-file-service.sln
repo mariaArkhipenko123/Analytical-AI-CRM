@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRM.FileService.Tests.Unit", "CRM.FileService.Tests.Unit\CRM.FileService.Tests.Unit.csproj", "{18DDC100-72AB-49F4-A119-3DDED6CA01CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRM.FileService.Tests.Integrations", "CRM.FileService.Tests.Integrations\CRM.FileService.Tests.Integrations.csproj", "{E430EFC1-876D-4946-BF13-7D4BBF257663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.FileService.API", "CRM.FileService.API\CRM.FileService.API.csproj", "{7154DE92-4798-4A84-816A-A7F95AF59A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.FileService.Application", "CRM.FileService.Application\CRM.FileService.Application.csproj", "{09A735CA-6C7D-49AF-B93C-F3B26D4FBCB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.FileService.Infrastructure", "CRM.FileService.Infrastructure\CRM.FileService.Infrastructure.csproj", "{971A6F45-8BCE-4CF8-A350-5E8FF0613A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.FileService.Domain", "CRM.FileService.Domain\CRM.FileService.Domain.csproj", "{E69C3A74-0172-4F7D-92F6-32B780F9AABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18DDC100-72AB-49F4-A119-3DDED6CA01CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18DDC100-72AB-49F4-A119-3DDED6CA01CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18DDC100-72AB-49F4-A119-3DDED6CA01CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18DDC100-72AB-49F4-A119-3DDED6CA01CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E430EFC1-876D-4946-BF13-7D4BBF257663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E430EFC1-876D-4946-BF13-7D4BBF257663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E430EFC1-876D-4946-BF13-7D4BBF257663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E430EFC1-876D-4946-BF13-7D4BBF257663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7154DE92-4798-4A84-816A-A7F95AF59A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7154DE92-4798-4A84-816A-A7F95AF59A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7154DE92-4798-4A84-816A-A7F95AF59A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7154DE92-4798-4A84-816A-A7F95AF59A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09A735CA-6C7D-49AF-B93C-F3B26D4FBCB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A735CA-6C7D-49AF-B93C-F3B26D4FBCB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09A735CA-6C7D-49AF-B93C-F3B26D4FBCB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09A735CA-6C7D-49AF-B93C-F3B26D4FBCB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971A6F45-8BCE-4CF8-A350-5E8FF0613A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971A6F45-8BCE-4CF8-A350-5E8FF0613A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971A6F45-8BCE-4CF8-A350-5E8FF0613A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971A6F45-8BCE-4CF8-A350-5E8FF0613A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69C3A74-0172-4F7D-92F6-32B780F9AABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69C3A74-0172-4F7D-92F6-32B780F9AABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69C3A74-0172-4F7D-92F6-32B780F9AABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69C3A74-0172-4F7D-92F6-32B780F9AABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54D0D502-0403-4B97-A5D1-9C814F7E5E0E}
+	EndGlobalSection
+EndGlobal
