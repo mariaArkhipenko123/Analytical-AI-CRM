@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.ReportService.API", "CRM.ReportService.API\CRM.ReportService.API.csproj", "{90471341-97C9-441D-83FF-2219164EE1A4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FD93CFF-A46E-40BA-84BF-2BA902B6C542} = {4FD93CFF-A46E-40BA-84BF-2BA902B6C542}
+		{90761792-C579-4DEE-B5A0-33DEB463C5A0} = {90761792-C579-4DEE-B5A0-33DEB463C5A0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.ReportService.Domain", "CRM.ReportService.Domain\CRM.ReportService.Domain.csproj", "{5120D323-646F-41F1-8126-A5806C02E41D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.ReportService.Application", "CRM.ReportService.Application\CRM.ReportService.Application.csproj", "{4FD93CFF-A46E-40BA-84BF-2BA902B6C542}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5120D323-646F-41F1-8126-A5806C02E41D} = {5120D323-646F-41F1-8126-A5806C02E41D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.ReportService.Infrastructure", "CRM.ReportService.Infrastructure\CRM.ReportService.Infrastructure.csproj", "{90761792-C579-4DEE-B5A0-33DEB463C5A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FD93CFF-A46E-40BA-84BF-2BA902B6C542} = {4FD93CFF-A46E-40BA-84BF-2BA902B6C542}
+		{5120D323-646F-41F1-8126-A5806C02E41D} = {5120D323-646F-41F1-8126-A5806C02E41D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.ReportService.Test.Unit", "CRM.ReportService.Test.Unit\CRM.ReportService.Test.Unit.csproj", "{DB741D46-145D-4694-8D4E-B00DB4FF9AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.ReportService.Test.Integration", "CRM.ReportService.Test.Integration\CRM.ReportService.Test.Integration.csproj", "{9B0AC8E4-9D4C-4E74-87F5-BFDD8AD4B349}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90471341-97C9-441D-83FF-2219164EE1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90471341-97C9-441D-83FF-2219164EE1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90471341-97C9-441D-83FF-2219164EE1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90471341-97C9-441D-83FF-2219164EE1A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5120D323-646F-41F1-8126-A5806C02E41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5120D323-646F-41F1-8126-A5806C02E41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5120D323-646F-41F1-8126-A5806C02E41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5120D323-646F-41F1-8126-A5806C02E41D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD93CFF-A46E-40BA-84BF-2BA902B6C542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD93CFF-A46E-40BA-84BF-2BA902B6C542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD93CFF-A46E-40BA-84BF-2BA902B6C542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD93CFF-A46E-40BA-84BF-2BA902B6C542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90761792-C579-4DEE-B5A0-33DEB463C5A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90761792-C579-4DEE-B5A0-33DEB463C5A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90761792-C579-4DEE-B5A0-33DEB463C5A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90761792-C579-4DEE-B5A0-33DEB463C5A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB741D46-145D-4694-8D4E-B00DB4FF9AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB741D46-145D-4694-8D4E-B00DB4FF9AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB741D46-145D-4694-8D4E-B00DB4FF9AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB741D46-145D-4694-8D4E-B00DB4FF9AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0AC8E4-9D4C-4E74-87F5-BFDD8AD4B349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0AC8E4-9D4C-4E74-87F5-BFDD8AD4B349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0AC8E4-9D4C-4E74-87F5-BFDD8AD4B349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0AC8E4-9D4C-4E74-87F5-BFDD8AD4B349}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

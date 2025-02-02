@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>1f266634-4bca-48e2-bdb7-8796f0a68101</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\CRM.ReportService.Application\CRM.ReportService.Application.csproj" />
+		<ProjectReference Include="..\CRM.ReportService.Infrastructure\CRM.ReportService.Infrastructure.csproj" />
+	</ItemGroup>
+	
+</Project>
