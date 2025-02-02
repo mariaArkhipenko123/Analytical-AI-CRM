@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>602ac2f9-aded-42b5-9b16-7180de6c3589</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.1.39" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.3.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.1" />
+  </ItemGroup>
+	
+  <ItemGroup>
+	<ProjectReference Include="..\CRM.CoreService.Application\CRM.CoreService.Application.csproj" />
+	<ProjectReference Include="..\CRM.CoreService.Domain\CRM.CoreService.Domain.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Compile Update="Resources\Services\EmailMessageBuilder.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EmailMessageBuilder.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+	
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Services\EmailMessageBuilder.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmailMessageBuilder.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+	
+</Project>
