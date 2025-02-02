@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>61749ea4-1bbb-402c-8c8d-622063cef03a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CRM.LoggerService.Application\CRM.LoggerService.Application.csproj" />
+    <ProjectReference Include="..\CRM.LoggerService.Infrastructure\CRM.LoggerService.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

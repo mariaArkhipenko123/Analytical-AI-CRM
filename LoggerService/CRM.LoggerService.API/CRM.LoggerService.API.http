@@ -1,0 +1,6 @@
+@CRM.LoggerService.API_HostAddress = http://localhost:5019
+
+GET {{CRM.LoggerService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
